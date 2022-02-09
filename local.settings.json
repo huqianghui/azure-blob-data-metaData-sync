@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=datalake1demo;AccountKey=VSaTpKIy5AGdxQGR4tgYWlpmqv/wXfQ9/BLb+WiEgIEC/psRXqHqxofpox90cvuOJ9vtu3747C28r3fK2s0gSw==;EndpointSuffix=core.chinacloudapi.cn",
+    "FUNCTIONS_WORKER_RUNTIME_VERSION": "~7",
+    "FUNCTIONS_WORKER_RUNTIME": "powershell",
+    "FUNCTIONS_WORKER_PROCESS_COUNT":"2",
+    "nfs1source2account_STORAGE": "DefaultEndpointsProtocol=https;AccountName=nfs1source2account;AccountKey=5+6hVxp7UWTjijqKoojPnkdOczbPJXWpWF+YN2vpt0LEqDj/ve7uB1AL/WIg4nlr1XrltGuPIZ9MWL/0cw+YKA==;EndpointSuffix=core.chinacloudapi.cn"
+  }
+}

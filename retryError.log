@@ -1,0 +1,158 @@
+2022-01-21T01:58:29.441Z] INFORMATION:  blob sync test!!!
+[2022-01-21T01:59:07.668Z] ERROR: nodename nor servname provided, or not known
+[2022-01-21T01:59:07.669Z] 
+[2022-01-21T01:59:07.669Z] Exception             : 
+[2022-01-21T01:59:07.669Z]     Type               : Microsoft.Azure.Storage.StorageException
+[2022-01-21T01:59:07.669Z]     RequestInformation : Microsoft.Azure.Storage.RequestResult
+[2022-01-21T01:59:07.669Z]     TargetSite         : 
+[2022-01-21T01:59:07.669Z]         Name          : MoveNext
+[2022-01-21T01:59:07.669Z]         DeclaringType : Microsoft.Azure.Storage.Core.Executor.Executor+<ExecuteAsync>d__1`1[T]
+[2022-01-21T01:59:07.669Z]         MemberType    : Method
+[2022-01-21T01:59:07.669Z]         Module        : Microsoft.Azure.Storage.Common.dll
+[2022-01-21T01:59:07.669Z]     StackTrace         : 
+[2022-01-21T01:59:07.669Z]    at Microsoft.Azure.Storage.Core.Executor.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken token)
+[2022-01-21T01:59:07.669Z]    at Microsoft.WindowsAzure.Commands.Storage.Model.Contract.StorageBlobManagement.GetBlobReferenceFromServerAsync(CloudBlobContainer container, String blobName, Nullable`1 snapshotTime, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.669Z]    at Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlobCommand.ListBlobsByName(Int64 taskId, IStorageBlobManagement localChannel, String containerName, String blobName, Boolean includeDeleted, Boolean includeVersion)
+[2022-01-21T01:59:07.669Z]    at Microsoft.WindowsAzure.Commands.Storage.Common.LimitedConcurrencyTaskScheduler.RunConcurrentTask(Int64 taskId, Task task)
+[2022-01-21T01:59:07.669Z]     Message            : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.669Z]     InnerException     : 
+[2022-01-21T01:59:07.669Z]         Type           : System.Net.Http.HttpRequestException
+[2022-01-21T01:59:07.669Z]         TargetSite     : 
+[2022-01-21T01:59:07.669Z]             Name          : MoveNext
+[2022-01-21T01:59:07.669Z]             DeclaringType : System.Net.Http.ConnectHelper+<ConnectAsync>d__1, System.Net.Http, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+[2022-01-21T01:59:07.669Z]             MemberType    : Method
+[2022-01-21T01:59:07.670Z]             Module        : System.Net.Http.dll
+[2022-01-21T01:59:07.670Z]         StackTrace     : 
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[2022-01-21T01:59:07.670Z]    at Microsoft.Azure.Storage.Core.Executor.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken token)
+[2022-01-21T01:59:07.670Z]         Message        : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.670Z]         InnerException : 
+[2022-01-21T01:59:07.670Z]             Type            : System.Net.Sockets.SocketException
+[2022-01-21T01:59:07.670Z]             Message         : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.670Z]             SocketErrorCode : HostNotFound
+[2022-01-21T01:59:07.670Z]             ErrorCode       : -131073
+[2022-01-21T01:59:07.670Z]             NativeErrorCode : -131073
+[2022-01-21T01:59:07.670Z]             TargetSite      : 
+[2022-01-21T01:59:07.670Z]                 Name          : Throw
+[2022-01-21T01:59:07.670Z]                 DeclaringType : System.Runtime.ExceptionServices.ExceptionDispatchInfo
+[2022-01-21T01:59:07.670Z]                 MemberType    : Method
+[2022-01-21T01:59:07.670Z]                 Module        : System.Private.CoreLib.dll
+[2022-01-21T01:59:07.670Z]             StackTrace      : 
+[2022-01-21T01:59:07.670Z]    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.670Z]             Source          : System.Private.CoreLib
+[2022-01-21T01:59:07.670Z]             HResult         : -2147467259
+[2022-01-21T01:59:07.670Z]         Source         : System.Net.Http
+[2022-01-21T01:59:07.671Z]         HResult        : -2147467259
+[2022-01-21T01:59:07.672Z]     Source             : Microsoft.Azure.Storage.Common
+[2022-01-21T01:59:07.672Z]     HResult            : -2146233088
+[2022-01-21T01:59:07.672Z] CategoryInfo          : CloseError: (:) [Get-AzStorageBlob], StorageException
+[2022-01-21T01:59:07.672Z] FullyQualifiedErrorId : StorageException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlobCommand
+[2022-01-21T01:59:07.672Z] InvocationInfo        : 
+[2022-01-21T01:59:07.672Z]     MyCommand        : Get-AzStorageBlob
+[2022-01-21T01:59:07.672Z]     ScriptLineNumber : 30
+[2022-01-21T01:59:07.672Z]     OffsetInLine     : 14
+[2022-01-21T01:59:07.672Z]     HistoryId        : 212
+[2022-01-21T01:59:07.672Z]     ScriptName       : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1
+[2022-01-21T01:59:07.672Z]     Line             : $BlobFiles = Get-AzStorageBlob -Container "nanjing"  -Blob "ubuntuTest.rdp" -Context $SrcContext
+[2022-01-21T01:59:07.672Z]                        
+[2022-01-21T01:59:07.672Z]     PositionMessage  : At /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1:30 char:14
+[2022-01-21T01:59:07.672Z]                        + … BlobFiles = Get-AzStorageBlob -Container "nanjing"  -Blob "ubuntuTest …
+[2022-01-21T01:59:07.672Z]                        +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2022-01-21T01:59:07.672Z]     PSScriptRoot     : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1
+[2022-01-21T01:59:07.672Z]     PSCommandPath    : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1
+[2022-01-21T01:59:07.672Z]     InvocationName   : Get-AzStorageBlob
+[2022-01-21T01:59:07.672Z]     CommandOrigin    : Internal
+[2022-01-21T01:59:07.672Z] ScriptStackTrace      : at <ScriptBlock>, /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1: line 30
+[2022-01-21T01:59:07.672Z] PipelineIterationInfo : 
+[2022-01-21T01:59:07.672Z] 
+[2022-01-21T01:59:07.673Z] 
+[2022-01-21T01:59:07.673Z] 
+[2022-01-21T01:59:07.673Z] 
+[2022-01-21T01:59:07.673Z] 
+[2022-01-21T01:59:07.673Z] Result: ERROR: nodename nor servname provided, or not known
+[2022-01-21T01:59:07.673Z] 
+[2022-01-21T01:59:07.673Z] Exception             : 
+[2022-01-21T01:59:07.673Z]     Type               : Microsoft.Azure.Storage.StorageException
+[2022-01-21T01:59:07.673Z]     RequestInformation : Microsoft.Azure.Storage.RequestResult
+[2022-01-21T01:59:07.673Z]     TargetSite         : 
+[2022-01-21T01:59:07.673Z]         Name          : MoveNext
+[2022-01-21T01:59:07.673Z]         DeclaringType : Microsoft.Azure.Storage.Core.Executor.Executor+<ExecuteAsync>d__1`1[T]
+[2022-01-21T01:59:07.673Z]         MemberType    : Method
+[2022-01-21T01:59:07.673Z]         Module        : Microsoft.Azure.Storage.Common.dll
+[2022-01-21T01:59:07.673Z]     StackTrace         : 
+[2022-01-21T01:59:07.673Z]    at Microsoft.Azure.Storage.Core.Executor.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken token)
+[2022-01-21T01:59:07.673Z]    at Microsoft.WindowsAzure.Commands.Storage.Model.Contract.StorageBlobManagement.GetBlobReferenceFromServerAsync(CloudBlobContainer container, String blobName, Nullable`1 snapshotTime, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.673Z]    at Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlobCommand.ListBlobsByName(Int64 taskId, IStorageBlobManagement localChannel, String containerName, String blobName, Boolean includeDeleted, Boolean includeVersion)
+[2022-01-21T01:59:07.673Z]    at Microsoft.WindowsAzure.Commands.Storage.Common.LimitedConcurrencyTaskScheduler.RunConcurrentTask(Int64 taskId, Task task)
+[2022-01-21T01:59:07.673Z]     Message            : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.673Z]     InnerException     : 
+[2022-01-21T01:59:07.673Z]         Type           : System.Net.Http.HttpRequestException
+[2022-01-21T01:59:07.673Z]         TargetSite     : 
+[2022-01-21T01:59:07.673Z]             Name          : MoveNext
+[2022-01-21T01:59:07.673Z]             DeclaringType : System.Net.Http.ConnectHelper+<ConnectAsync>d__1, System.Net.Http, Version=4.2.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+[2022-01-21T01:59:07.674Z]             MemberType    : Method
+[2022-01-21T01:59:07.674Z]             Module        : System.Net.Http.dll
+[2022-01-21T01:59:07.674Z]         StackTrace     : 
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean allowHttp2, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.674Z]    at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+[2022-01-21T01:59:07.674Z]    at Microsoft.Azure.Storage.Core.Executor.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken token)
+[2022-01-21T01:59:07.674Z]         Message        : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.674Z]         InnerException : 
+[2022-01-21T01:59:07.674Z]             Type            : System.Net.Sockets.SocketException
+[2022-01-21T01:59:07.674Z]             Message         : nodename nor servname provided, or not known
+[2022-01-21T01:59:07.674Z]             SocketErrorCode : HostNotFound
+[2022-01-21T01:59:07.674Z]             ErrorCode       : -131073
+[2022-01-21T01:59:07.674Z]             NativeErrorCode : -131073
+[2022-01-21T01:59:07.674Z]             TargetSite      : 
+[2022-01-21T01:59:07.674Z]                 Name          : Throw
+[2022-01-21T01:59:07.675Z]                 DeclaringType : System.Runtime.ExceptionServices.ExceptionDispatchInfo
+[2022-01-21T01:59:07.675Z]                 MemberType    : Method
+[2022-01-21T01:59:07.675Z]                 Module        : System.Private.CoreLib.dll
+[2022-01-21T01:59:07.675Z]             StackTrace      : 
+[2022-01-21T01:59:07.675Z]    at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.677Z]             Source          : System.Private.CoreLib
+[2022-01-21T01:59:07.677Z]             HResult         : -2147467259
+[2022-01-21T01:59:07.677Z]         Source         : System.Net.Http
+[2022-01-21T01:59:07.677Z]         HResult        : -2147467259
+[2022-01-21T01:59:07.677Z]     Source             : Microsoft.Azure.Storage.Common
+[2022-01-21T01:59:07.677Z]     HResult            : -2146233088
+[2022-01-21T01:59:07.677Z] CategoryInfo          : CloseError: (:) [Get-AzStorageBlob], StorageException
+[2022-01-21T01:59:07.677Z] FullyQualifiedErrorId : StorageException,Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlobCommand
+[2022-01-21T01:59:07.677Z] InvocationInfo        : 
+[2022-01-21T01:59:07.677Z]     MyCommand        : Get-AzStorageBlob
+[2022-01-21T01:59:07.677Z]     ScriptLineNumber : 30
+[2022-01-21T01:59:07.677Z]     OffsetInLine     : 14
+[2022-01-21T01:59:07.677Z]     HistoryId        : 212
+[2022-01-21T01:59:07.677Z]     ScriptName       : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1
+[2022-01-21T01:59:07.677Z]     Line             : $BlobFiles = Get-AzStorageBlob -Container "nanjing"  -Blob "ubuntuTest.rdp" -Context $SrcContext
+[2022-01-21T01:59:07.677Z]                        
+[2022-01-21T01:59:07.677Z]     PositionMessage  : At /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1:30 char:14
+[2022-01-21T01:59:07.677Z]                        + … BlobFiles = Get-AzStorageBlob -Container "nanjing"  -Blob "ubuntuTest …
+[2022-01-21T01:59:07.677Z]                        +               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[2022-01-21T01:59:07.678Z]     PSScriptRoot     : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1
+[2022-01-21T01:59:07.678Z]     PSCommandPath    : /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1
+[2022-01-21T01:59:07.678Z]     InvocationName   : Get-AzStorageBlob
+[2022-01-21T01:59:07.678Z]     CommandOrigin    : Internal
+[2022-01-21T01:59:07.678Z] ScriptStackTrace      : at <ScriptBlock>, /Users/huqianghui/Downloads/nanjingBlobMetadata/BlobMetaDataTrigger1/run.ps1: line 30
+[2022-01-21T01:59:07.678Z] PipelineIterationInfo : 
+[2022-01-21T01:59:07.678Z] 
+[2022-01-21T01:59:07.678Z] 
+[2022-01-21T01:59:07.678Z] 
+[2022-01-21T01:59:07.678Z] 
+[2022-01-21T01:59:07.678Z] 
+[2022-01-21T01:59:07.678Z] Exception: nodename nor servname provided, or not known
+[2022-01-21T01:59:07.678Z] Stack:    at Microsoft.Azure.Storage.Core.Executor.Executor.ExecuteAsync[T](RESTCommand`1 cmd, IRetryPolicy policy, OperationContext operationContext, CancellationToken token)
+[2022-01-21T01:59:07.678Z]    at Microsoft.WindowsAzure.Commands.Storage.Model.Contract.StorageBlobManagement.GetBlobReferenceFromServerAsync(CloudBlobContainer container, String blobName, Nullable`1 snapshotTime, AccessCondition accessCondition, BlobRequestOptions options, OperationContext operationContext, CancellationToken cancellationToken)
+[2022-01-21T01:59:07.678Z]    at Microsoft.WindowsAzure.Commands.Storage.Blob.Cmdlet.GetAzureStorageBlobCommand.ListBlobsByName(Int64 taskId, IStorageBlobManagement localChannel, String containerName, String blobName, Boolean includeDeleted, Boolean includeVersion)
+[2022-01-21T01:59:07.678Z]    at Microsoft.WindowsAzure.Commands.Storage.Common.LimitedConcurrencyTaskScheduler.RunConcurrentTask(Int64 taskId, Task task).
